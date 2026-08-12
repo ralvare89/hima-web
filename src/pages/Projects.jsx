@@ -4,20 +4,37 @@ import { motion, AnimatePresence } from 'framer-motion'
 import AnimatedSection from '../components/AnimatedSection'
 
 const projects = [
-  { key: 'proj1', category: 'commercial', color: 'from-hima-green/20 to-hima-black' },
-  { key: 'proj2', category: 'industrial', color: 'from-blue-900/30 to-hima-black' },
-  { key: 'proj3', category: 'commercial', color: 'from-purple-900/20 to-hima-black' },
-  { key: 'proj4', category: 'residential', color: 'from-amber-900/20 to-hima-black' },
-  { key: 'proj5', category: 'industrial', color: 'from-red-900/20 to-hima-black' },
-  { key: 'proj6', category: 'residential', color: 'from-teal-900/20 to-hima-black' },
+  { key: 'proj1',  category: 'commercial',  img: '/projects/commercial/la_capitania.jpg' },
+  { key: 'proj5',  category: 'industrial',  img: '/projects/industrial/conducen.jpg' },
+  { key: 'proj9',  category: 'residential', img: '/projects/residential/flats_21.jpg' },
+  { key: 'proj12', category: 'educational', img: '/projects/educational/kts_school.jpg' },
+  { key: 'proj2',  category: 'commercial',  img: '/projects/commercial/oficinas_merck.jpg' },
+  { key: 'proj6',  category: 'industrial',  img: '/projects/industrial/femsa_4000.jpg' },
+  { key: 'proj10', category: 'residential', img: '/projects/residential/roble_sabana.jpg' },
+  { key: 'proj13', category: 'educational', img: '/projects/educational/liceo_otilio_ulate.jpg' },
+  { key: 'proj3',  category: 'commercial',  img: '/projects/commercial/maxi_pali.JPG' },
+  { key: 'proj7',  category: 'industrial',  img: '/projects/industrial/femsa_master_plan.jpg' },
+  { key: 'proj11', category: 'residential', img: '/projects/residential/residencia_stein.jpg' },
+  { key: 'proj14', category: 'educational', img: '/projects/educational/centro_cultural.jpg' },
+  { key: 'proj4',  category: 'commercial',  img: '/projects/commercial/mc_guadalupe.jpg' },
+  { key: 'proj8',  category: 'industrial',  img: '/projects/industrial/unilever.jpg' },
 ]
 
-const filters = ['all', 'commercial', 'industrial', 'residential']
+const filters = ['all', 'commercial', 'industrial', 'residential', 'educational']
 
 const badgeColors = {
   commercial: 'bg-blue-900/40 text-blue-300 border-blue-700/30',
   industrial: 'bg-orange-900/40 text-orange-300 border-orange-700/30',
   residential: 'bg-green-900/40 text-hima-green border-hima-green/30',
+  educational: 'bg-purple-900/40 text-purple-300 border-purple-700/30',
+}
+
+const filterColors = {
+  all:         { active: 'bg-hima-green text-hima-black border-hima-green',               hover: 'hover:bg-hima-green/10 hover:text-hima-green hover:border-hima-green/40' },
+  commercial:  { active: 'bg-blue-900/40 text-blue-300 border-blue-700/30',               hover: 'hover:bg-blue-900/20 hover:text-blue-300 hover:border-blue-700/30' },
+  industrial:  { active: 'bg-orange-900/40 text-orange-300 border-orange-700/30',         hover: 'hover:bg-orange-900/20 hover:text-orange-300 hover:border-orange-700/30' },
+  residential: { active: 'bg-green-900/40 text-hima-green border-hima-green/30',          hover: 'hover:bg-green-900/20 hover:text-hima-green hover:border-hima-green/30' },
+  educational: { active: 'bg-purple-900/40 text-purple-300 border-purple-700/30',         hover: 'hover:bg-purple-900/20 hover:text-purple-300 hover:border-purple-700/30' },
 }
 
 export default function Projects() {
@@ -27,7 +44,7 @@ export default function Projects() {
   const visible = projects.filter((p) => active === 'all' || p.category === active)
 
   return (
-    <div className="pt-20">
+    <div className="pt-28">
       {/* Header */}
       <div className="bg-hima-dark border-b border-white/5 py-20 px-4">
         <AnimatedSection className="max-w-3xl mx-auto text-center">
@@ -46,10 +63,10 @@ export default function Projects() {
             <button
               key={f}
               onClick={() => setActive(f)}
-              className={`px-5 py-2 rounded text-sm font-medium transition-all duration-200 ${
+              className={`px-5 py-2 rounded text-sm font-medium border transition-all duration-200 ${
                 active === f
-                  ? 'bg-hima-green text-hima-black'
-                  : 'bg-hima-card border border-white/10 text-hima-white/60 hover:border-hima-green/30 hover:text-hima-white'
+                  ? filterColors[f].active
+                  : `bg-hima-card border-white/10 text-hima-white/60 ${filterColors[f].hover}`
               }`}
             >
               {t(`projects.filter_${f}`)}
@@ -72,14 +89,13 @@ export default function Projects() {
                 transition={{ duration: 0.35 }}
                 className="group bg-hima-card border border-white/5 rounded-lg overflow-hidden hover:border-hima-green/25 hover:-translate-y-1 transition-all duration-300"
               >
-                {/* Image placeholder */}
-                <div className={`h-48 bg-gradient-to-br ${proj.color} relative overflow-hidden`}>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-hima-green/20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={0.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                  </div>
-                  {/* Shimmer line */}
+                {/* Project image */}
+                <div className="h-48 relative overflow-hidden bg-hima-dark">
+                  <img
+                    src={proj.img}
+                    alt={t(`projects.${proj.key}_title`)}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-hima-green/40 to-transparent" />
                 </div>
 

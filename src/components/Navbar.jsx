@@ -43,10 +43,10 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 py-3 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-28 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src="/hima-logo.svg" alt="HIMA Electromecánica" className="h-14 w-auto" />
+          <img src="/logo-hima.png" alt="HIMA Electromecánica" className="h-20 w-auto" />
         </Link>
 
         {/* Desktop links */}

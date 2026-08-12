@@ -30,7 +30,7 @@ export default function About() {
   const { t } = useTranslation()
 
   return (
-    <div className="pt-20">
+    <div className="pt-28">
       {/* Page header */}
       <div className="bg-hima-dark border-b border-white/5 py-20 px-4">
         <AnimatedSection className="max-w-3xl mx-auto text-center">
@@ -59,10 +59,10 @@ export default function About() {
               <div className="bg-hima-card border border-white/5 rounded-lg p-8">
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { label: t('about.stat_founded_label'), value: '2003' },
+                    { label: t('about.stat_founded_label'), value: '2016' },
                     { label: t('about.stat_country_label'), value: 'Costa Rica' },
                     { label: t('about.stat_standards_label'), value: 'NEC / NFPA' },
-                    { label: t('about.stat_certs_label'), value: 'ASHRAE, CFIA' },
+                    { label: t('about.stat_certs_label'), value: 'CC-09555' },
                   ].map(({ label, value }) => (
                     <div key={label} className="border-l-2 border-hima-green pl-4">
                       <div className="text-hima-white font-semibold text-lg">{value}</div>
@@ -127,7 +127,7 @@ export default function About() {
         </StaggerContainer>
       </section>
 
-      {/* Team */}
+      {/* Team — oculto por solicitud del cliente
       <section className="bg-hima-dark border-t border-white/5 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
@@ -141,7 +141,6 @@ export default function About() {
             {[1, 2, 3].map((n) => (
               <StaggerItem key={n}>
                 <div className="bg-hima-card border border-white/5 rounded-lg overflow-hidden hover:border-hima-green/25 transition-colors duration-300">
-                  {/* Avatar placeholder */}
                   <div className="h-48 bg-gradient-to-br from-hima-green/10 to-hima-black flex items-center justify-center">
                     <div className="w-20 h-20 rounded-full bg-hima-green/20 border-2 border-hima-green/40 flex items-center justify-center">
                       <svg className="w-10 h-10 text-hima-green/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -160,6 +159,8 @@ export default function About() {
           </StaggerContainer>
         </div>
       </section>
+      */}
+      
     </div>
   )
 }

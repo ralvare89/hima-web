@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="#0d0d0d"/>
+
+  <!-- Isometric building tower, 6 floors stepping out from top to bottom -->
+  <!-- Each floor: top face (light green), left face (dark green), right face (medium green) -->
+
+  <!-- Floor 6 (top) -->
+  <polygon points="32,8  44,14  32,20  20,14" fill="#8aad7b"/>
+  <polygon points="20,14  32,20  32,26  20,20" fill="#3a5436"/>
+  <polygon points="32,20  44,14  44,20  32,26" fill="#6b8c5e"/>
+
+  <!-- Floor 5 -->
+  <polygon points="20,20  32,26  32,32  18,25" fill="#2e4229"/>
+  <polygon points="32,26  44,20  46,25  32,32" fill="#6b8c5e"/>
+  <line x1="20" y1="20" x2="18" y2="25" stroke="#8aad7b" stroke-width="0.5"/>
+  <line x1="32" y1="26" x2="32" y2="32" stroke="#8aad7b" stroke-width="0.4"/>
+  <line x1="44" y1="20" x2="46" y2="25" stroke="#8aad7b" stroke-width="0.5"/>
+
+  <!-- Floor 4 -->
+  <polygon points="18,25  32,32  32,38  16,30" fill="#2a3d25"/>
+  <polygon points="32,32  46,25  48,30  32,38" fill="#6b8c5e"/>
+  <line x1="18" y1="25" x2="16" y2="30" stroke="#8aad7b" stroke-width="0.5"/>
+  <line x1="32" y1="32" x2="32" y2="38" stroke="#8aad7b" stroke-width="0.4"/>
+  <line x1="46" y1="25" x2="48" y2="30" stroke="#8aad7b" stroke-width="0.5"/>
+
+  <!-- Floor 3 -->
+  <polygon points="16,30  32,38  32,44  14,35" fill="#263821"/>
+  <polygon points="32,38  48,30  50,35  32,44" fill="#5a7a4e"/>
+  <line x1="16" y1="30" x2="14" y2="35" stroke="#8aad7b" stroke-width="0.5"/>
+  <line x1="32" y1="38" x2="32" y2="44" stroke="#8aad7b" stroke-width="0.4"/>
+  <line x1="48" y1="30" x2="50" y2="35" stroke="#8aad7b" stroke-width="0.5"/>
+
+  <!-- Floor 2 -->
+  <polygon points="14,35  32,44  32,50  12,40" fill="#22331d"/>
+  <polygon points="32,44  50,35  52,40  32,50" fill="#6b8c5e"/>
+  <line x1="14" y1="35" x2="12" y2="40" stroke="#8aad7b" stroke-width="0.5"/>
+  <line x1="32" y1="44" x2="32" y2="50" stroke="#8aad7b" stroke-width="0.4"/>
+  <line x1="50" y1="35" x2="52" y2="40" stroke="#8aad7b" stroke-width="0.5"/>
+
+  <!-- Floor 1 (base) -->
+  <polygon points="12,40  32,50  32,56  10,45" fill="#1e2e18"/>
+  <polygon points="32,50  52,40  54,45  32,56" fill="#5a7a4e"/>
+  <line x1="12" y1="40" x2="10" y2="45" stroke="#8aad7b" stroke-width="0.5"/>
+  <line x1="52" y1="40" x2="54" y2="45" stroke="#8aad7b" stroke-width="0.5"/>
+
+  <!-- Bottom edge highlight -->
+  <line x1="10" y1="45" x2="32" y2="56" stroke="#6b8c5e" stroke-width="0.8"/>
+  <line x1="32" y1="56" x2="54" y2="45" stroke="#6b8c5e" stroke-width="0.8"/>
+</svg>

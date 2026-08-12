@@ -5,8 +5,8 @@ import CircuitBackground from '../components/CircuitBackground'
 import AnimatedSection, { StaggerContainer, StaggerItem } from '../components/AnimatedSection'
 
 const stats = [
-  { value: '20+', key: 'stat_years' },
-  { value: '150+', key: 'stat_projects' },
+  { value: '10+', key: 'stat_years' },
+  { value: '300+', key: 'stat_projects' },
   { value: '80+', key: 'stat_clients' },
 ]
 

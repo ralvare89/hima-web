@@ -63,7 +63,7 @@ export default function Services() {
   const { t } = useTranslation()
 
   return (
-    <div className="pt-20">
+    <div className="pt-28">
       {/* Header */}
       <div className="bg-hima-dark border-b border-white/5 py-20 px-4">
         <AnimatedSection className="max-w-3xl mx-auto text-center">
