@@ -151,9 +151,11 @@
     "info_location": "Ubicación",
     "info_hours": "Horario",
     "phone_value": "+506 2228-0358",
+    "whatsapp_value": "+506 8879-7830",
     "email_value": "info@himacr.com",
     "location_value": "Escazú, San José, Costa Rica",
-    "hours_value": "Lun–Vie 7:00–17:00"
+    "hours_value": "Lun–Vie 7:00am–5:00pm",
+    "info_whatsapp": "WhatsApp"
   },
   "footer": {
     "description": "Soluciones electromecánicas integrales con más de 20 años de experiencia en Costa Rica.",
