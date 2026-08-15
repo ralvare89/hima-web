@@ -70,11 +70,11 @@
     "automation_title": "Sistemas Especiales",
     "automation_desc": "Diseño, instalación y certificación de sistemas especiales como sistemas de detección contra incendio, sistemas de robo, sistemas de CCTV, sistemas de control de acceso, sistemas de automatización industrial entre otros.",
     "mechanical_title": "Sistemas Hidráulicos y Mecánicos",
-    "mechanical_desc": "Descripción: Diseño, instalación de tuberías de agua potable y caliente, aguas residuales, sistemas contra incendios (NFPA 13), sistemas de tuberías de infraestructura, sistemas de gas LP, sistemas de aguas pluviales y equipos de bombeo.",
+    "mechanical_desc": "Diseño, instalación de tuberías de agua potable y caliente, aguas residuales, sistemas contra incendios (NFPA 13), sistemas de tuberías de infraestructura, sistemas de gas LP, sistemas de aguas pluviales y equipos de bombeo.",
     "maintenance_title": "Mantenimiento Preventivo",
     "maintenance_desc": "Programas de mantenimiento preventivo y correctivo para equipos y sistemas eléctricos como tableros y  acometidas eléctricas, circuitos de iluminación y lámparas, circuitos de  tomacorrientes y plaqueria, sistemas especiales como detección de incendios, CCTV, alarma contra robo, control de acceso, motores, transformadores, Red de tuberías como agua potable y caliente, aguas residuales, aguas pluviales, supresión de incendios, gas LP tanques para agua caliente, calentadores de paso, trampas de grasa, sistemas de bombeo y sistemas HVAC. Reducimos tiempos de parada y prolongamos la vida útil de sus activos.",
     "management_title": "Sistemas de Telecomunicaciones",
-    "management_desc": "Dirección técnica integral de obras electromecánicas: planificación, presupuestación, coordinación de subcontratistas, control de calidad y entrega de dossiers as-built completos.",
+    "management_desc": "Diseño e instalación de sistemas de cableado estructurado, redes de voz y datos, organización y certificación de cableado con soluciones para proyectos residenciales, comerciales e industriales.",
     "why_title": "¿Por qué elegir HIMA?",
     "why_exp_title": "Experiencia",
     "why_exp_desc": "Equipo de trabajo con más de 25 años de experiencia",
@@ -154,7 +154,7 @@
     "whatsapp_value": "+506 8879-7830",
     "email_value": "info@himacr.com",
     "location_value": "Escazú, San José, Costa Rica",
-    "hours_value": "Lun–Vie 7:00am–5:00pm",
+    "hours_value": "Lun–Vie 8:00am–6:00pm",
     "info_whatsapp": "WhatsApp"
   },
   "footer": {
